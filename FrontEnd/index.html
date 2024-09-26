@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ERC-20 Token DApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>My ERC-20 Token DApp</h1>
+    
+    <div>
+        <!-- Connect MetaMask Wallet -->
+        <button onclick="connectWallet()">Connect Wallet</button>
+        <p id="walletAddress"></p>
+    </div>
+
+    <div>
+        <!-- Display Token Balance -->
+        <h3>Your Token Balance</h3>
+        <button onclick="getBalance()">Get Balance</button>
+        <p id="balance"></p>
+    </div>
+
+    <div>
+        <!-- Transfer Tokens Form -->
+        <h3>Transfer Tokens</h3>
+        <input type="text" id="recipient" placeholder="Recipient Address">
+        <input type="text" id="amount" placeholder="Amount">
+        <button onclick="transferTokens()">Transfer Tokens</button>
+        <p id="transactionStatus"></p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
